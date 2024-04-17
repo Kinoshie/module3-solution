@@ -1,1 +1,24 @@
-# module3-solution
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta harset="utf-8">
+        <title>responsive Navbar</title>
+        <meta name="viewport" content="eidth=deviced-width, inital-scale=1.0">
+        <link rel="stylesheet" href="styles.css 2.css">
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Our Menu</Menu></label>
+            <ul>
+                <li><a class="active" href="#">Beef</a></li>
+                <li><a href="#">Chicken</a></li>
+                <li><a href="#">Shrimp</a></li>
+            </ul>
+        </nav>
+        </pay>
+
+        
