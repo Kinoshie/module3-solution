@@ -1,85 +1,109 @@
-body {
-    font-size: 16px;
-    color: #fff;
-    background-color: #61122f;
-    font-family: 'Oxygen', sans-serif;
-  }
-  
-  /** HEADER **/
-  #header-nav {
-    background-color: #f6b319;
-    border-radius: 0;
-    border: 0;
-  }
-  
-  #logo-img {
-    background: url('../images/restaurant-logo_large.png') no-repeat;
-    width: 150px;
-    height: 150px;
-    margin: 10px 15px 10px 0;
-  }
-  
-  .navbar-brand {
-    padding-top: 25px;
-  }
-  
-  .navbar-brand h1 { /* Restaurant name */
-    font-family: 'Lora', serif;
-    color: #557c3e;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px #222;
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: .75;
-  }
-  .navbar-brand a:hover, .navbar-brand a:focus {
+*{
+    padding: 0;
+    margin: 0;
     text-decoration: none;
-  }
-  .navbar-brand p { /* Kosher cert */
-    color: #000;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: cursive;
+}
+
+nav{
+    background: wheat;
+    height: 80px;
+    width: 100%;
+}
+
+label logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
     text-transform: uppercase;
-    font-size: .7em;
-    margin-top: 15px;
-  }
-  .navbar-brand p span { /* Star-K */
-    vertical-align: middle;
-  }
-  
-  #nav-list {
-    margin-top: 10px;
-  }
-  #nav-list a {
-    color: #951C49;
+}
+
+a.active,a.hover; {
+    background: #black;
+    transition: .5s;
+
+}
+
+.checkbtn{
+    font: size 30px; 
+    color: white;
+    float: right;
+    line: hight 80px;
+    margin-right: 40;
+    cursor: pointer;
+    display: none;
+
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px
+        padding: left 50px;
+}
+
+nav ul li a {font-size: 16px;
+
+}
+
+@media (max-width 858px){
+    .checkbtn{
+        display: block;
+    }
+}
+
+ul{
+    position: fixed;
+    width: 100%;
+    height: hv;
+    background: #2c3e50;
+    top: 80px;
+    left: -100;
     text-align: center;
-  }
-  #nav-list a:hover {
-    background: #E7E7E7;
-  }
-  #nav-list a span {
-    font-size: 1.8em;
-  }
-  
-  #phone {
-    margin-top: 5px;
-  }
-  #phone a { /* Phone number */
-    text-align: right;
-    padding-bottom: 0;
-  }
-  #phone div { /* We Deliver */
-    color: #557c3e;
-    text-align: right;
-    padding-right: 15px;
-  }
-  
-  .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-    border: 1px solid #61122f;
-  }
-  .navbar-header button.navbar-toggle {
-    clear: both;
-    margin-top: -30px;
-  }
-  /* END HEADER */
+    transition: all .5s;
+
+}
+
+nav ul li{
+    display: block;
+}
+
+nav ul li a{
+    font-size: 20px;
+}
+
+a: hover, a.active{
+    background: none;
+    color: #0082e6;
+}
 
